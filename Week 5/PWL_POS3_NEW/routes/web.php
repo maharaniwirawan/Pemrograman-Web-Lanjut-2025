@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WelcomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,5 @@ Route::get('/adminlte', function () {
 Route::get('/adminlte', function () {
     return redirect('/adminlte/AdminLTE-3.2.0/index.php');
 });
+
+Route::get('/', [WelcomeController::class, 'index']);

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Https\view;
 use Illuminate\Support\Facades\DB;
 
 class LevelController extends Controller
